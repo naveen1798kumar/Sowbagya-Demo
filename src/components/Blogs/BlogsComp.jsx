@@ -1,6 +1,6 @@
 import React from "react";
 import BlogCard from "./BlogCard";
-import Img1 from "../../assets/places/tajmahal.jpg";
+import Img1 from "../../assets/Products/Electronics/electronics_1.jpg";
 import Img2 from "../../assets/places/water.jpg";
 import Img3 from "../../assets/places/boat.jpg";
 
@@ -40,7 +40,7 @@ const BlogsComp = () => {
       <div className="dark:bg-gray-900 dark:text-white py-10">
         <section data-aos="fade-up" className="container ">
           <h1 className=" my-8 border-l-8 border-primary/50 py-2 pl-2 text-3xl font-bold">
-            Our Latest Blogs
+            Our Popular Brands
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
             {BlogsData.map((item) => (

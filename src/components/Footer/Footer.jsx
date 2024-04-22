@@ -41,8 +41,10 @@ const Footer = () => {
         >
           <source src={NatureVid} type="video/mp4" />
         </video>
+
         <div className="container">
           <div className="grid md:grid-cols-3 py-5 bg-white/80 backdrop-blur-sm rounded-t-xl">
+            
             <div className="py-8 px-4">
               <h1 className="flex items-center gap-3 text-xl sm:text-3xl font-bold text-justify sm:text-left">
                 <img src={FooterLogo} alt="" className="max-h-[60px]" />
@@ -77,6 +79,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+
             <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
               <div>
                 <div className="py-8 px-4">
@@ -139,12 +142,15 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+
           </div>
+
           <div>
             <div className="text-center py-5 border-t-2 border-gray-300/50 bg-primary text-white">
               @copyright 2024 All rights reserved || Made with ❤️ by Dilshad
             </div>
           </div>
+          
         </div>
       </div>
     </>
