@@ -24,13 +24,13 @@ const BlogCard = ({ image, date, title, description, author }) => {
               className="mx-auto h-[250px] w-full object-cover transition duration-700 hover:scale-110"
             />
           </div>
-          <div className="flex justify-between pt-2 text-slate-600">
+          {/* <div className="flex justify-between pt-2 text-slate-600">
             <p>{date}</p>
             <p className="line-clamp-1">By {author}</p>
-          </div>
+          </div> */}
           <div className="space-y-2 py-3">
             <h1 className="line-clamp-1 font-bold">{title}</h1>
-            <p className="line-clamp-2">{description}</p>
+            {/* <p className="line-clamp-2">{description}</p> */}
           </div>
         </div>
       </Link>

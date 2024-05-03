@@ -13,7 +13,7 @@ import Testimonial from "../components/Testimonial/Testimonial";
 import Banner from "../components/Banner/Banner";
 import BannerPic from "../components/BannerPic/BannerPic";
 import BannerImg from "../assets/cover-women.jpg";
-import Banner2 from "../assets/travel-cover2.jpg";
+import Banner2 from "../assets/travel-cover.jpg";
 import herobg from "../assets/hero-bg.jpg";
 import OrderPopup from "../components/OrderPopup/OrderPopup";
 
@@ -49,7 +49,8 @@ const Home = () => {
 
           <div className="bg-[rgba(0,0,0,0.3)] absolute h-[550px] w-full z-[-1]"></div>
           {/*  */}
-          <div className="w-full text-center py-2 bg-blue-400 absolute">
+      
+      <div className="w-full text-center py-2 bg-blue-400 absolute">
         <input
           type="search"
           name=""
@@ -64,10 +65,12 @@ const Home = () => {
         </div>
 
         <Places handleOrderPopup={handleOrderPopup} />
-        <BannerPic img={BannerImg} />
+        
+        <BannerPic img={Banner2} />
         <BlogsComp />
         <Banner />
-        <BannerPic img={Banner2} />
+        <BannerPic img={BannerImg} />
+        
         <Testimonial />
         <OrderPopup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
       </div>

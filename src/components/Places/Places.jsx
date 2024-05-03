@@ -3,6 +3,9 @@ import PlaceCard from "./PlaceCard";
 
 import { NavLink } from "react-router-dom"
 // import Img1 from "../../assets/places/boat.jpg";
+// import TV from "./pages/ProductsPage/TV"
+
+
 import Img1 from "../../assets/FURNITURES/TELEVISION/TV 01.jpg";
 import Img2 from "../../assets/FURNITURES/TELEVISION/TV 02.jpg";
 import Img3 from "../../assets/FURNITURES/TELEVISION/TV 03.webp";
@@ -248,7 +251,7 @@ const Places = ({ handleOrderPopup }) => {
             ))}
           </div>
           <div className="flex w-full justify-end py-5">
-              <NavLink to="/blogs" onClick={scrollToTop}>
+              <NavLink to="/tv" onClick={scrollToTop}>
               <p className="flex justify-center items-center bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full">For More Visit <span className="px-2 text-black hover:text-white"><FaArrowRight/></span></p>
               </NavLink>
           </div>
@@ -320,6 +323,8 @@ const Places = ({ handleOrderPopup }) => {
           </div>
           <hr />
         </section>
+
+
       </div>
     </>
   );

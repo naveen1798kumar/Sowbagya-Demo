@@ -1,5 +1,6 @@
 import React from "react";
 import FooterLogo from "../../assets/logo.png";
+import Logo2 from "../../assets/sowbagya logo.png";
 import {
   FaFacebook,
   FaInstagram,
@@ -46,19 +47,28 @@ const Footer = () => {
           <div className="grid md:grid-cols-3 py-5 bg-white/80 backdrop-blur-sm rounded-t-xl">
             
             <div className="py-8 px-4">
-              <h1 className="flex items-center gap-3 text-xl sm:text-3xl font-bold text-justify sm:text-left">
+              {/* <h1 className="flex items-center gap-3 text-xl sm:text-3xl font-bold text-justify sm:text-left">
                 <img src={FooterLogo} alt="" className="max-h-[60px]" />
-                {/* TravelloGo */}
-              </h1>
+              </h1> */}
+
+<div className="flex items-center gap-4 h-16 font-bold text-2xl">
+              {/* <Link to={"/"} onClick={() => window.scrollTo(0, 0)}>
+              <img src={Logo} className="w-30 cursor-pointer" alt="logo" />
+              </Link> */}
+              <Link to={"/"} onClick={() => window.scrollTo(0, 0)}>
+              <img src={Logo2} className="w-30 cursor-pointer" alt="logo" />
+              </Link>
+              {/* <span>TCJ Tourism</span> */}
+            </div>
+              
               <p className="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                facere ab hic accusamus omnis dolor voluptatibus illo, tempore
-                eum tenetur.
+                All your home appliances under one roof.
+                Discover Convenience, Your one-step Destination for All Home Appliances.
               </p>
               <br />
               <div className="flex items-center gap-3 ">
                 <FaLocationArrow />
-                <p>Noida, Uttar Pradesh</p>
+                <p>Near Renakaliamman Temple, Palani</p>
               </div>
               <div className="flex items-center gap-3 mt-3">
                 <FaMobileAlt />
@@ -147,7 +157,7 @@ const Footer = () => {
 
           <div>
             <div className="text-center py-5 border-t-2 border-gray-300/50 bg-primary text-white">
-              @copyright 2024 All rights reserved || Made with ❤️ by Dilshad
+              @copyright 2024 All rights reserved || Made with ❤️ by <b className="text-black">SDS</b> Technologies
             </div>
           </div>
           
