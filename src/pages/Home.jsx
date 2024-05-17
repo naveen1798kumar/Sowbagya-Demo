@@ -14,7 +14,7 @@ import Banner from "../components/Banner/Banner";
 import BannerPic from "../components/BannerPic/BannerPic";
 import BannerImg from "../assets/cover-women.jpg";
 import Banner2 from "../assets/travel-cover.jpg";
-import herobg from "../assets/hero-bg.jpg";
+// import herobg from "../assets/hero-bg.jpg";
 import OrderPopup from "../components/OrderPopup/OrderPopup";
 
 
@@ -49,8 +49,9 @@ const Home = () => {
 
           <div className="bg-[rgba(0,0,0,0.3)] absolute h-[550px] w-full z-[-1]"></div>
           {/*  */}
-      
-      <div className="w-full text-center py-2 bg-blue-400 absolute">
+
+      {/* Search Bar Commented */}
+      {/* <div className="w-full text-center py-2 bg-blue-400 absolute">
         <input
           type="search"
           name=""
@@ -58,7 +59,8 @@ const Home = () => {
           placeholder="Search Products"
           className="w-[80%] px-8 bg-gray-100 my-2 range accent-primary focus:outline-primary focus:outline outline-1 rounded-full p-2 z-10"
         />
-      </div>
+      </div> */}
+
 
           <Hero />
           

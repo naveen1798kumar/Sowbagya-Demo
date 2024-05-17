@@ -10,7 +10,9 @@ import Slider4 from "../../assets/Hero-Slider/slider4.jpg"
 import Slider5 from "../../assets/Hero-Slider/slider5.jpg"
 
 const HeroSlider = () => {
-  const sliderImages = [Slider1, Slider2, Slider3, Slider4, Slider5];
+  const sliderImages = [Slider1];
+// , Slider2, Slider3, Slider4, Slider5
+
 
   const settings = {
     dots: true,

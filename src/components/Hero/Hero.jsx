@@ -58,7 +58,7 @@ const Hero = () => {
         >
           <Slider {...settings}>
             {productData.map((product, index) => (
-              <div key={index} className="mx-4 rounded overflow-hidden shadow-lg">
+              <div key={index} className="mx-4 rounded overflow-hidden ">
                  <Link to={product.route}>
                   <div className="relative h-32 w-32 mx-auto mt-6 rounded-full overflow-hidden border-4 border-blue-500 transition duration-300 hover:border-gray-400">
                     <img
@@ -70,10 +70,10 @@ const Hero = () => {
                 </Link>
                 <div
                   className="font-bold text-white text-xl mb-2 text-center"
-                  style={{
-                    textShadow:
-                      "1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black",
-                  }}
+                  // style={{
+                  //   textShadow:
+                  //     "1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black",
+                  // }}
                 >
                   {product.name}
                 </div>
