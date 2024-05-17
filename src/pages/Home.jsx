@@ -69,9 +69,9 @@ const Home = () => {
         <Places handleOrderPopup={handleOrderPopup} />
         
         <BannerPic img={Banner2} />
-        <BlogsComp />
-        <Banner />
-        <BannerPic img={BannerImg} />
+        {/* <BlogsComp /> */}
+        {/* <Banner /> */}
+        {/* <BannerPic img={BannerImg} /> */}
         
         <Testimonial />
         <OrderPopup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />

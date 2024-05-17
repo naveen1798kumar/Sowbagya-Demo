@@ -1,24 +1,27 @@
 import React from "react";
 import Slider from "react-slick";
+import Img1 from "../../assets/logos/pngwing1.png"
+import Img2 from "../../assets/logos/pngwing2.png"
+import Img3 from "../../assets/logos/pngwing3.png"
 
 const testimonialData = [
   {
     id: 1,
     name: "Samuel",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/101/101",
+    img: Img1,
   },
   {
     id: 1,
     name: "John Doe",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/102/102",
+    img: Img2,
   },
   {
     id: 1,
     name: "Smith",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/103/103",
+    img: Img3,
   },
 ];
 
@@ -66,11 +69,11 @@ const Testimonial = () => {
       <div data-aos="fade-up" data-aos-duration="300" className="py-10">
         <div className="container">
           {/* Header section */}
-          <div className="text-center mb-20 max-w-[400px] mx-auto">
-            <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+          <div className="text-center mb-10 max-w-[400px] mx-auto">
+            {/* <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
               Testimonial
-            </p>
-            <h1 className="text-3xl font-bold">Testimonial</h1>
+            </p> */}
+            <h1 className="text-3xl font-bold">Our Popular Brands</h1>
             <p className="text-xs text-gray-400">
               {" "}
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
@@ -78,6 +81,8 @@ const Testimonial = () => {
               quam! Nulla?
             </p>
           </div>
+
+
           {/* testimonial section */}
           <div
             data-aos="zoom-in"
@@ -88,17 +93,17 @@ const Testimonial = () => {
               {testimonialData.map(({ id, name, text, img }) => {
                 return (
                   <div key={id} className="my-6">
-                    <div className="flex flex-col justify-center items-center gap-4 text-center shadow-lg p-4 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative">
+                    <div className="flex flex-col justify-center items-center h-[200px] gap-4 text-center shadow-lg p-4 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative">
                       <img
                         src={img}
                         alt=""
                         className="rounded-full block mx-auto"
                       />
-                      <h1 className="text-xl font-bold">{name}</h1>
+                      {/* <h1 className="text-xl font-bold">{name}</h1>
                       <p className="text-gray-500 text-sm">{text}</p>
                       <p className="text-black/20 text-9xl font-serif absolute top-0 right-0">
                         ,,
-                      </p>
+                      </p> */}
                     </div>
                   </div>
                 );
